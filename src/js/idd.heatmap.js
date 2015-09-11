@@ -1,5 +1,6 @@
 ﻿// See http://jsperf.com/rendering-a-frame-in-image-data
-InteractiveDataDisplay.heatmapBackgroundRenderer = new InteractiveDataDisplay.SharedRenderWorker("script/idd.heatmapworker.js",
+InteractiveDataDisplay.heatmapBackgroundRenderer = new InteractiveDataDisplay.SharedRenderWorker(
+    InteractiveDataDisplay.heatmapBackgroundRendererDataURI,
     function (heatmapPlot, completedTask) {
         heatmapPlot.onRenderTaskCompleted(completedTask);
     });

@@ -1,0 +1,1 @@
+InteractiveDataDisplay.heatmapBackgroundRendererDataURI = "data:text/javascript;base64,
