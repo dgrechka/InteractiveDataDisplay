@@ -199,13 +199,6 @@ describe('Initialization of InteractiveDataDisplay.Plot', function () {
     it('should throw an exception for non-existing <div>', function () {
         expect(function () { InteractiveDataDisplay.asPlot("nonexistingdiv"); }).toThrow();
     });
-
-    it('should throw an exception for <p>', function () {
-        var p = document.createElement("p");
-        p.setAttribute("data-idd-plot", "plot");
-        p.setAttribute("data-idd-name", "name");
-        expect(function () { InteractiveDataDisplay.asPlot(p); }).toThrow();
-    });
 });
 
 
