@@ -113,7 +113,7 @@ var _initializeInteractiveDataDisplay = function () { // determines settings dep
 
         var jqDiv;
 
-        if (div.tagName !== undefined && div.tagName.toLowerCase() === "div") {
+        if (div instanceof HTMLElement) {
             jqDiv = $(div);
         } else if (typeof (div) === "string") {
             jqDiv = $("#" + div);
