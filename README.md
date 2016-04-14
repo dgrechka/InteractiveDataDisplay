@@ -44,3 +44,8 @@ Licensing
 ---------
 
 Please see the file called LICENSE.
+
+<script>
+  console.log("test");
+</script>
+
